@@ -1,0 +1,22 @@
+@use '../abstracts/variables';
+
+//Estilo del Header
+.container {
+    &--flex {
+        display: flex;
+    }
+    &--space-between {
+        justify-content: space-between;
+    }
+}
+.header {
+    background-color: #F0F8FF;
+    height: 8vh;
+/*     padding: 1rem; */
+    &__logo {
+        height: 8vh;
+    }
+    &__nav-item {
+        margin: 1rem;
+    }
+}

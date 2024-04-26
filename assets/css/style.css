@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* abstracts */
+/* Importaciones */
+/* color botones */
+/* blancos */
+/* amarillos */
+/* Rojos */
+/* verdes */
+/* Azules */
+/* negros */
+/* PT Mono */
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap");
+/* color botones */
+/* blancos */
+/* amarillos */
+/* Rojos */
+/* verdes */
+/* Azules */
+/* negros */
+/* vendors */
+/* Base */
+body {
+  font-family: "PT Mono", sans-serif;
+}
+
+.agere__text {
+  font-family: "Roboto", sans-serif;
+}
+
+.conocenos__texto {
+  font-family: "Roboto", sans-serif;
+}
+
+.data__text {
+  font-family: "Roboto", sans-serif;
+}
+
+/* cabeceras */
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+i {
+  font-size: 5rem;
+  color: #F0F8FF;
+}
+
+/* Reset de estilo de css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* color botones */
+/* blancos */
+/* amarillos */
+/* Rojos */
+/* verdes */
+/* Azules */
+/* negros */
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.collage {
+  height: 90vh;
+  width: 100vw;
+}
+.collage__column {
+  position: relative;
+}
+.collage__column--width40 {
+  width: 40vw;
+}
+.collage__column--width60 {
+  width: 60vw;
+}
+
+.column__img1--height55 {
+  width: 100%;
+  height: 55vh;
+}
+.column__img2--height35 {
+  width: 100%;
+  height: 35vh;
+}
+
+.agere {
+  display: flex;
+  justify-content: center;
+  background-color: #F0F8FF;
+  height: 55vh;
+}
+.agere__titulo {
+  width: 40%;
+  padding: 1rem 0 1rem 4rem;
+}
+.agere__texto {
+  width: 50%;
+  padding-left: 4rem;
+}
+.agere--width30 {
+  width: 30vw;
+}
+
+.conocenos {
+  height: 35vh;
+  background-color: #F0F8FF;
+}
+.conocenos__titulo {
+  width: 40%;
+  padding: 0.5rem 0 1rem 2rem;
+}
+.conocenos__texto {
+  width: 40%;
+  padding-left: 2rem;
+}
+.conocenos--width60 {
+  width: 70vw;
+}
+
+.move__rectangle {
+  background-color: #3C91E6;
+  width: 35vw;
+  height: 25vh;
+  position: absolute;
+  top: 63vh;
+  left: 36.2vw;
+}
+.move__square {
+  width: min(17vw, 17vh); /* Al usar vw y vh no quedaba cuadrado, por los distintas tamaños de alto y ancho */
+  height: min(17vw, 17vh); /* Con min() puedo hacer que tome el valor más pequeño de los dos y así queden ambos con el mismo valor */
+}
+.move__square--orange {
+  display: flex;
+  background-color: #E4572E;
+  justify-content: center;
+  align-items: center;
+  /* Position */
+  position: absolute;
+  top: 44vh;
+  left: 70vw;
+}
+.move__square--yellow {
+  background-color: #F1DD7B;
+  /* Position */
+  position: absolute;
+  top: 46vh;
+  left: 71vw;
+}
+.move__square--z-index-1 {
+  z-index: 1;
+}
+.move__square--z-index-2 {
+  z-index: 2;
+}
+.move__stats {
+  background-color: #F0F8FF;
+  position: absolute;
+  top: 46vh;
+  left: 39vw;
+  width: 32vw;
+  height: 17vh;
+}
+.move__stats--z-index-1 {
+  z-index: 1;
+}
+.move--z-index-2 {
+  z-index: 2;
+}
+.move__img1 {
+  overflow: hidden;
+  width: 5vw;
+  position: absolute;
+  top: 63vh;
+  left: 68vw;
+}
+.move__img1--size {
+  height: 20vh;
+}
+.move__img2 {
+  width: 28vw;
+  height: 26vh;
+  position: absolute;
+  top: 67vh;
+  left: 33vw;
+}
+
+.stats__data {
+  height: 17vh;
+  margin: 0.5rem;
+}
+
+.data__number {
+  width: 10%;
+}
+.data__text {
+  width: 70%;
+}
+
+/* Layout */
+/* abstracts */
+.container--flex {
+  display: flex;
+}
+.container--space-between {
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #F0F8FF;
+  height: 8vh;
+  /*     padding: 1rem; */
+}
+.header__logo {
+  height: 8vh;
+}
+.header__nav-item {
+  margin: 1rem;
+}
+
+/* Max width */
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Components */
+/* color botones */
+/* blancos */
+/* amarillos */
+/* Rojos */
+/* verdes */
+/* Azules */
+/* negros */
+.btn {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.btn__primary {
+  border: solid 1px;
+}
+.btn__primary:hover {
+  color: #989797;
+  border-color: #989797;
+  border: solid 1px;
+}
+.btn__secundary {
+  background-color: #4CA866;
+  color: white;
+  border: solid 1px;
+}
+.btn__secundary:hover {
+  color: #000000;
+  background-color: #FFF;
+}
+
+/* Pages */
+/* Themes */
+
+/*# sourceMappingURL=style.css.map */

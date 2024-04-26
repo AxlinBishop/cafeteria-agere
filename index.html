@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudio Becerra">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Importaciones, links, fonts -->
+    <script src="https://kit.fontawesome.com/90f957e0cb.js" crossorigin="anonymous"></script>
+    <!-- Links locales, css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon y título de la página -->
+    <link rel="shortcut icon" href="" type="image/icon">
+    <title>Cafetería Agere</title>
+</head>
+<body>
+    <header class="header">
+        <div class="content">
+            <div class="container container--flex container--space-between">
+                <div class="container--flex">
+                    <img class="header__logo" src="assets/img/logo.png" alt="logo">
+                    <a href="#" class="header__nav-item">Acerca de</a>
+                    <a href="#" class="header__nav-item">Tienda</a>
+                </div>
+                <div class="container">
+                    <button type="button" class="btn btn__primary">Iniciar sesión</button>
+                    <button type="button" class="btn btn__secundary">Registrarte</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Collage, básico, cuatro secciones -->
+    <section class="collage container--flex">
+        <div class="collage__column--width70"><!-- Esta columna utilizará un 60% -->
+            <div class="column__img1 column__img1--height55">
+                <img class="column__img1 column__img1--height55" src="assets/img/img-1.png" alt="Cafetería">
+            </div>
+            <div class="conocenos conocemos--width60">
+                <h2 class="conocenos__titulo">Ven a Conocernos</h2>
+                <p class="conocenos__texto">Disfruta de una gran experiencia tomando un café
+                    o un té dentro de nuestra tienda o si prefieres puedes comprar en línea 
+                    nuestros cafés para disfrutarlos en casa.
+                </p>
+            </div>
+        </div>
+        <div class="collage__column--width30"> <!-- Esta columna utilizará un 40% -->
+            <div class="agere agere--width40">
+                <div>
+                    <h1 class="agere__titulo">Café Agere</h1>
+                    <h3 class="agere__texto">Coffee Shop</h3>
+                </div>
+            </div>
+            <div class="column__img2 column__img2--height35">
+                <img class="column__img2 column__img2--height35" src="assets/img/img-2.png" alt="Sirviendo Café">
+            </div>
+        </div>
+    </section>
+    <!-- Elementos que se desplazarán en el collage -->
+    <div class="move">
+        <!-- Elementos con z index 1 -->
+        <div class="move__square move__square--yellow move__square--z-index-1"></div>
+        <div class="move__rectangle move__rectangle--z-index-1"></div>
+        <div class="move__stats move__stats--z-index-1 container--flex">
+            <div class="stats__data">
+                <h2 class="data__number">+50</h2>
+                <p class="data__text">Variedades de café</p>
+            </div>
+            <div class="stats__data">
+                <h2 class="data__number">20</h2>
+                <p class="data__text">Países diferentes</p>
+            </div>
+            <div class="stats__data">
+                <h2 class="data__number">+1000</h2>
+                <p class="data__text">Accesorios para hacer el mejor café</p>
+            </div>
+        </div>
+        <!-- Elementos con z index 2 -->
+        <div class="move__square move__square--orange move__square--z-index-2"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="move__img1 z-index-2">
+            <img class="move__img1--size" src="assets/img/img-3.png" alt="" class="move--z-index-2">
+        </div>
+        <img class="move__img2 z-index-2" src="assets/img/img-4.png" alt="Mapa">
+        <img src="" alt="" class="move--z-index-2">
+    </div>
+    
+
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
